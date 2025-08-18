@@ -1,0 +1,27 @@
+Extracted text (first 500 chars):
+Nested-ReFT: Efficient Reinforcement Learning for Large Language Model
+Fine-Tuning via Off-Policy Rollouts *
+Maxime Heuillet1,2, Yufei Cui3, Boxing Chen3, Audrey Durand1,2,4, Prasanna Parthasarathi3
+1Universit´e Laval (IID)
+2Mila - Qu´ebec AI Institute
+3Huawei Noah’s Ark Lab (Montreal Research Center)
+4Canada CIFAR AI Chair
+Abstract
+Advanced reasoning in LLMs on challenging domains like
+mathematical reasoning can be tackled using verifiable re-
+wards based reinforced fine-tuning (ReFT). In stand
+
+==================================================
+
+Number of chunks: 16
+First chunk (first 100 chars): Nested-ReFT: Efficient Reinforcement Learning for Large Language Model Fine-Tuning via Off-Policy Ro
+
+==================================================
+
+Embedding shape: (5, 384)
+
+==================================================
+
+FAISS Search Results:
+Indices (I): [[0 1 2]]
+Distances (D): [[1.         0.67858326 0.5359002 ]]
