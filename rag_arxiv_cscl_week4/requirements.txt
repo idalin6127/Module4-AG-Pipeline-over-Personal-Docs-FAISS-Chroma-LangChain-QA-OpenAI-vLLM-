@@ -6,3 +6,6 @@ fastapi
 uvicorn
 numpy
 tqdm
+langchain
+langchain-community
+langchain-openai
