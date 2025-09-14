@@ -35,6 +35,17 @@ It converts resume and portfolio files into embeddings, indexes them in a vector
 
 ---
 
+## 🔥 Architecture / Workflow Diagram
+flowchart LR
+  A[Docs]-->B[Chunk]
+  B-->C[Embeddings]
+  C-->D[FAISS/Chroma]
+  E[Query]-->F[Retriever(k)]
+  D-->F
+  F-->G[LLM Generate + Cite]
+
+---
+
 ## 📂 Deliverables
 - `class_4.py` / `notebooks/` — end-to-end RAG pipeline (load → chunk → embed → index → retrieve → answer → evaluate)  
 - `resume.pdf` + `portfolio_notes.txt` — sample inputs for the **Resume AI** use case  
@@ -44,6 +55,12 @@ It converts resume and portfolio files into embeddings, indexes them in a vector
 
 ---
 
+
+## 🔥 How to Run / Quick Start 
+pip install -r requirements.txt
+python rag_run.py --resume resume.pdf --notes portfolio.txt --k 3
+
+---
 ## 🌟 Highlights
 - **End-to-end RAG** with clear, modular steps (easy to swap embeddings/DBs/LLMs).  
 - **Grounded answers** with retrieved snippets (reduces hallucinations).  
@@ -61,6 +78,17 @@ It converts resume and portfolio files into embeddings, indexes them in a vector
    ```python
    agent = RetrievalQA.from_chain_type(
      llm=OpenAI(temperature=0),  # or ChatOpenAI(openai_api_base="http://localhost:8000/v1", ...)
+
+---
+## 🌟 Skills Demonstrated
+RAG design；vector DB；prompting & evaluation；LLM deployment patterns。
+
+---
+
+
+
+
+
      chain_type="stuff",
      retriever=vectorstore.as_retriever(search_kwargs={"k": 3})
    )
