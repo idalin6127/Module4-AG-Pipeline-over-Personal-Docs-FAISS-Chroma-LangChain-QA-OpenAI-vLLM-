@@ -1,4 +1,9 @@
-# Week 4 – Retrieval-Augmented Generation (RAG)
+<p align="left">
+  <img src="logo/logo.png" alt="Project Logo" width="500"/>
+</p>
+
+
+# Module 4 – Retrieval-Augmented Generation (RAG)
 
 ## 🚀 Quick Summary
 Built a **RAG pipeline** that turns my resume/portfolio into a searchable knowledge base and answers questions with real citations.  
